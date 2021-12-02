@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.royaume{
+    position: absolute;
+    top:10px;
+    right:20px;
+    width: 240px;
+    margin: 0 auto;
+    display: block;
+}
+.r_logo{
+    width:70px;
+    margin: 0 auto;
+    display: block;
+}
+.hcp{
+    width: 300px;
+    position: absolute;
+    top:20px;
+    left:20px;
+
+}
+.h_logo{
+    width:120px;
+    top:-10px;
+
+}
+.container{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../styles/images/back.jpg');
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+    overflow-y: scroll;
+    top:0;
+    bottom: 0;
+    z-index: 0;
+    
+
+}
+.div1{
+    position: relative;
+    top: 10%;
+}
+.paper{
+    position: relative;
+    width: 900px;
+    background-color: white;
+    margin: 0 auto 60px;
+    border-radius: 5px;
+    border: 2 solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(105, 105, 105);
+}
+.logo{
+    margin: 0 auto ;
+    padding: 80px 0 0;
+    width: 100px;
+    display: block;
+}
+.h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+.h2{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+.p1{
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.green{
+    color: green;
+}
+.div_butt{
+    margin: 0 auto;
+    width: fit-content;
+}
+.button{
+    display: inline-block;
+    margin: 15px auto;
+    padding:  6px 40px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(154, 161, 160);
+    transition: 0.4s;
+    outline: none;
+    border: none;
+    pointer-events: none;
+    width: min-content;
+    cursor: none;
+}
+
+.Etape{
+    border-top: 2px dashed grey;
+    margin: 10px;
+    position: relative;
+}
+.photo{
+    width: 200px;
+    max-height:200px;
+    margin: 30px 50px;
+    display: inline-block;
+
+}
+.npa{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+}
+.Etape p{
+    font-size: 23px;
+    margin: 30px 40px;
+}
+.Etape .npa p{
+    margin: 30px 0px;
+}
+.Etape p span{
+    color: green;
+}
+.Etape .R_butt {
+    margin: 40px;
+    color: green;
+    padding: 5px 20px 6px;
+    background-color: rgb(223, 233, 222);
+    display: inline-block;
+}
+
+.Etape .R_butt:hover{
+    color: #313038;
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+}
+
+
+.R_butt2{
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 10px;
+    transition: 0.2s;
+    color:green;
+    margin-right:40px ;
+}
+.R_butt2:hover{
+    color: #313038;
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+}
+
+.Etape .averti{
+font-size:16px;
+padding: 20px 50px;
+}
+.Etape .averti li{
+    margin: 10px 0px;
+    color: rgb(78, 104, 78);
+    }
+
+.accept_class{
+    font-size: 18px;
+    color: gray;
+    text-decoration: solid underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#accept{
+    cursor: pointer;
+}
+ #accept:checked+.accept_class{
+    color: green ;
+    text-decoration: none;
+}
+
+#accept:checked ~ div .button{
+    background-color: rgb(0, 116, 0);
+    border-radius: 14px;
+    cursor: pointer;
+    pointer-events: initial;
+}
+#accept:checked  ~ div .button:hover{
+    border-radius: 0px;
+    background-color: rgb(2, 165, 2);
+
+}
